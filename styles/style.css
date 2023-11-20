@@ -17,6 +17,11 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+
+    --cursor-img: url("../images/cursor.png");
+    --accent-color: #FCBC05;
+
+    --slider-button-size: 6em;
 }
 
 
@@ -71,33 +76,215 @@
     src: url('../fonts/icomoon.ttf') format('truetype');
     font-weight: normal;
 }
-/* ----------------------------- */
 
-/* ----- CUSTOM PROPERTIES ----- */
-:root{
-	--cursor-img: url("../images/cursor.png");
-}
+
+
 
 /* ----------------------------- */
 
+
+/* --------- NAVIGATION -------- */
 
 nav {
+    position:relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+    z-index: 99;
+    color: white;
+    height: 90px;
+    font-family: Everett;
 }
 
 nav ul {
 	display: flex;
 	flex-direction: row;
 	gap: 2em;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    min-width: 96px;
+    min-height: 40px;
+}
+
+nav ul:nth-of-type(2) {
+    right: 3em;
+}
+
+
+
+/* ----------------------------- */
+
+/* ------ Video Carroussel ----- */
+
+header{
+    height: 795px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+
+header ul li{
+    display: grid;
+    grid-template-areas: "stack";
+    margin: auto;
+
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+
+    
+
+
+}
+
+header ul li > * {
+    grid-area: stack;
+}
+
+
+header ul li video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    
+}
+
+header ul li button{
+    height: var(--slider-button-size);
+    width: var(--slider-button-size);
+    border-radius: 50em;
+    border: none;
+    z-index: 2;
+    margin: 5em;
+    bottom: 5vh;
+}
+
+header ul li button:nth-of-type(1){
+    justify-self: left;
+}
+
+header ul li button:nth-of-type(2){
+    justify-self: right;
+}
+
+
+
+
+/* ----------------------------- */
+
+/* ------ MODEL SELECTION ------ */
+main section:nth-of-type(1){
+    min-height: 462px;
+    background-color: red;
+    min-width: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+main section:nth-of-type(1) {
+    margin-left: -2.5em;
+}
+
+main section:nth-of-type(1){
+    display: grid;
+    grid-template-areas: "stack";
+
+}
+
+main section:nth-of-type(1)> * {
+    grid-area: stack;
+}
+
+main section:nth-of-type(1) button {
+    z-index: 20;
+    margin: 5em;
+    height: var(--slider-button-size);
+    width: var(--slider-button-size);
+    border-radius: 50em;
+    border: none;
+}
+
+main section:nth-of-type(1) button:nth-of-type(1) {
+    justify-self: left;
+}
+
+main section:nth-of-type(1) button:nth-of-type(2) {
+    justify-self: right;
+}
+
+
+
+main section:nth-of-type(1) img{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+
+}
+
+main section:nth-of-type(1) div {
+    height: 200px
+}
+
+/* ----------------------------- */
+
+
+/* ------------ MISC ----------- */
+
+.scroll-line{
+    background: 
+       var(--accent-color);
+    top: 0;
+    left: 0;
+    height: 10px;
+    position: fixed;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 main {
 	cursor: var(--cursor-img), auto;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-	font-family: Anko, sans-serif;
+	font-family: Bolder;
+
+
 }
+
+body, h1, p {
+    margin: 0;
+}
+
+
+
+
+
+/* ----------------------------- */
+
+
 

@@ -1,75 +1,90 @@
 <!DOCTYPE html>
 <html lang="nl">
-	
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Howdy FED2324</title>
-	
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="jouw naam" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<body>
-	<nav>
-		<!-- left items -->
-		<ul>
-			<li><a href="#">Models</a></li>
-			<li><a href="#">Brand</a></li>
-			<li><a href="#">Ownership</a></li>
-			<li><a href="#">Corse</a></li>
-		</ul>
+    <title>Howdy FED2324</title>
 
-		<a href="#"><img src="" alt="main logo of Maserati, which is a home link"></a>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  </head>
 
-		<ul>
-			<li><button>Build your own</button></li>
-			<li><a href="#">location icon</a></li>
-			<li><a href="#">drive icon</a></li>
-		</ul>
+  <body onload="changeImage(1)">
+    <script defer src="../scripts/script.js"></script>
+    <nav>
+      <!-- left items -->
+      <ul>
+        <li><a href="#">Models</a></li>
+        <li><a href="#">Brand</a></li>
+        <li><a href="#">Ownership</a></li>
+        <li><a href="#">Corse</a></li>
+      </ul>
 
-	</nav>
+      <a href="#"
+        ><img
+          src="../images/frontpage/desktop_logo_white.svg"
+          alt="main logo of Maserati, which is a home link"
+      /></a>
 
-	<main>
-		<!-- video carrousel, height 914px --> 
-		<header>
+      <ul>
+        <li><button>Build your own</button></li>
+        <li><a href="#">location icon</a></li>
+        <li><a href="#">drive icon</a></li>
+      </ul>
+    </nav>
 
-		</header>
+    <main>
+      <!-- video carrousel, height 914px -->
+      <header>
+        <ul>
+          <!-- MC20 NOTTE -->
+          <li>
+            <video autoplay muted loop id="myVideo">
+              <source src="../video/Preview_mc20-notte.mp4" type="video/mp4" />
+            </video>
+            <button>"<"</button>
+            <button>">"</button>
+          </li>
 
-		<!-- model selection, height 462px -->
-		<section>
+          <!-- MC20 NOTTE -->
+          <li>
+            <video autoplay muted loop id="myVideo">
+              <source src="../video/Preview_mc20-notte.mp4" type="video/mp4" />
+            </video>
+            <button>"<"</button>
+            <button>">"</button>
+          </li>
+        </ul>
+      </header>
 
-		</section>
-
-		<!-- folgore video introduction, height 1353px -->
-		<section>
-
-		</section>
-
-		<!-- world of maseratie img carrousel, height 642px-->
-		<section>
-
-		</section>
-
-		<!-- maseratie merch store, height 978px -->
-		<section>
-
-		</section>
-
-
-	</main>
-
-	<footer>
-
-	</footer>
+      <!-- model selection, height 462px -->
+      <section>
+      
+            <img id="modelSelectImage" src="" alt="" />
+            <button onclick="changeImage(1)"">left</button>
+            <button onclick="changeImage(0)">"right"</button>
+        
 
 
 
-	
+      </section>
 
-	<script defer src="scripts/script.js"></script>
-</body>
-	
+      <!-- folgore video introduction, height 1353px -->
+      <section>
+        <video autoplay muted loop id="folgoreVideo">
+          <source src="../video/Hero_Folgore-1920x1080.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <!-- world of maseratie img carrousel, height 642px-->
+      <section></section>
+
+      <!-- maseratie merch store, height 978px -->
+      <section></section>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>

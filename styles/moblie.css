@@ -1,0 +1,241 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  /* startje */
+  --color-text: #111;
+  --color-background: #eee;
+  --nav-color: #868686;
+
+  --cursor-img: url("../images/cursor.png");
+  --accent-color: #fcbc05;
+
+  --slider-button-size: 6em;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+/* ----------- FONTS ----------- */
+@font-face {
+  font-family: Everett;
+  src: url("../fonts/Everett-Light-web.woff2") format("woff2");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Everett;
+  src: url("../fonts/Everett-Medium-web.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Everett;
+  src: url("../fonts/Everett-Regular-web.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Anko;
+  src: url("../fonts/Anko-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Maserati;
+  src: url("../fonts/864f8bdc-1a42-4d28-97a5-c15513fd193b.woff2")
+    format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Maserati;
+  src: url("../fonts/4201a9f6-3b6a-4b16-8b4d-39f514509601.woff2")
+    format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: icomoon;
+  src: url("../fonts/icomoon.ttf") format("truetype");
+  font-weight: normal;
+}
+
+/* ----------------------------- */
+
+/* --------- NAVIGATION -------- */
+nav {
+  position: fixed;
+  z-index: 4;
+  height: 90px;
+  left: 0;
+  margin-left: 0;
+  background-color: #868686, transparent;
+  width: 100vw;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12em;
+  list-style: none;
+  margin-left: -2rem;
+  align-items: center;
+}
+
+nav ul li:nth-of-type(2),
+nav ul li:nth-of-type(3) {
+  max-width: 2em;
+  height: auto;
+}
+
+html:has([type="checkbox"]:checked) #links {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+nav #links {
+  /* display: none; */
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 4;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+nav #links ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1em;
+}
+
+nav #links ul li {
+  font-family: Everett;
+}
+
+section,
+ul,
+li {
+  margin: 0;
+}
+
+main section ul {
+  list-style: none;
+  position: block   ;
+  width: 1vw;
+  display: grid;
+  grid-template-columns: 1fr 24px 306px 24px 1fr;
+  grid-template-rows: auto 15px 39px 15px 52.5px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+section ul li img {
+  width: 100vw;
+  /* display: block; */
+}
+
+section:nth-of-type(1) ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body {
+  margin: 0;
+  color: black;
+}
+
+/* test */
+
+/* --------- HAMBURGER -------- */
+nav ul li label div {
+  margin: 0 auto;
+  /* margin-top: 30px; */
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+}
+
+nav ul li span {
+  padding: 0;
+  width: 1rem;
+  height: 0.13rem;
+  background-color: white;
+  display: block;
+  border-radius: 0.13rem;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+
+nav ul li span:nth-of-type(1) {
+  top: 0;
+  transform-origin: 5%;
+}
+
+nav ul li span:nth-of-type(2),
+nav ul li span:nth-of-type(3) {
+  top: 0.45rem;
+}
+
+nav ul li span:nth-of-type(3) {
+  right: 0;
+}
+
+nav ul li span:nth-of-type(4) {
+  bottom: 0;
+  transform-origin: 5%;
+}
+
+nav ul li input {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+nav ul li input:checked + label > div > span:nth-of-type(1) {
+  transform: rotate(45deg);
+  height: 0.1rem;
+  width: 1.4rem;
+}
+
+nav ul li input:checked + label > div > span:nth-of-type(2) {
+  transform: rotate(-45deg);
+  height: 0.1rem;
+  background-color: transparent;
+}
+
+nav ul li input:checked + label > div > span:nth-of-type(3) {
+  transform: rotate(45deg);
+  height: 0.1rem;
+  background-color: transparent;
+}
+
+nav ul li input:checked + label > div > span:nth-of-type(4) {
+  transform: rotate(-45deg);
+  height: 0.1rem;
+  width: 1.4rem;
+}
