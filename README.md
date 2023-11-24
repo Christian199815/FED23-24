@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Chris Donker
 
   #### Je startniveau:
-  Rood (met uitschieters naar wit
+  Rood (met uitschieters naar Zwart)
 
   #### Je focus:
   Focus: Surface
