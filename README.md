@@ -115,7 +115,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ,zag ik dat dit betere manier is om mijn html te gaan opstarten.
 
   Hamburger menu (HTML & CSS)
-  Het hamburger menu is opgeboud uit een drietal span's die zo doormiddel van css gedraaid worden om van een hamburger shape naar een kruis shape te veranderen, en natuurlijk ook weer terug. 
+  Het hamburger menu is opgeboud uit een drietal span's die zo doormiddel van css gedraaid worden om van een hamburger shape naar een kruis shape te veranderen, en natuurlijk ook weer terug. <br>
   <img src="images/verslag/hamburger spans.png" width="200vw" alt="Hamburger icon zoals te zien op de site">
   <img src="images/verslag/open-nav.png" width="200vw" alt="Wanneer de navigatie geopend is">
   <img src="images/verslag/hamburger-html.png" width="200vw" alt="De html waaruit de hamburger op gebaseerd is">
