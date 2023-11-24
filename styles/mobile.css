@@ -22,14 +22,9 @@
   --slider-button-size: 6em;
 }
 
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
 
 /* ----------- FONTS ----------- */
-@font-face {
+/* @font-face {
   font-family: Everett;
   src: url("../fonts/Everett-Light-web.woff2") format("woff2");
   font-weight: 100;
@@ -71,9 +66,64 @@
   font-family: icomoon;
   src: url("../fonts/icomoon.ttf") format("truetype");
   font-weight: normal;
-}
+} */
 
 /* ----------------------------- */
+
+/* ------------ HTML ----------- */
+html:has([type="checkbox"]:checked) nav section {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+/* ----------------------------- */
+
+/* ------------ BODY ----------- */
+body {
+    margin: 0;
+    color: black;
+    background-color: black;
+    font-family: Everett;
+  }
+
+/* ----------------------------- */
+
+/* ------------ MAIN ----------- */
+main section,
+main ul,
+main li {
+  margin: 0;
+}
+
+
+main section ul {
+    list-style: none;
+    position: block   ;
+    width: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 24px 306px 24px 1fr;
+    grid-template-rows: auto 15px 39px 15px 52.5px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  main section ul li img {
+    width: 100vw;
+    /* display: block; */
+  }
+  
+  main section:nth-of-type(1) ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+
+/* ----------------------------- */
+
+
+
 
 /* --------- NAVIGATION -------- */
 nav {
@@ -102,12 +152,9 @@ nav ul li:nth-of-type(3) {
   height: auto;
 }
 
-html:has([type="checkbox"]:checked) #links {
-  opacity: 1;
-  pointer-events: auto;
-}
 
-nav #links {
+
+nav section {
   /* display: none; */
   position: relative;
   opacity: 0;
@@ -118,58 +165,36 @@ nav #links {
   width: 100vw;
 }
 
-nav #links ul {
-  list-style: none;
+nav section ul {
+  /* list-style: none; */
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   gap: 0.1em;
 }
 
-nav #links ul li {
+nav section ul li {
   font-family: Everett;
 }
 
-section,
-ul,
-li {
-  margin: 0;
-}
+/* ----------------------------- */
 
-main section ul {
-  list-style: none;
-  position: block   ;
-  width: 1vw;
-  display: grid;
-  grid-template-columns: 1fr 24px 306px 24px 1fr;
-  grid-template-rows: auto 15px 39px 15px 52.5px;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
 
-section ul li img {
-  width: 100vw;
-  /* display: block; */
-}
 
-section:nth-of-type(1) ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
-body {
-  margin: 0;
-  color: black;
-}
 
-/* test */
+
+
+
+
+
+
+
 
 /* --------- HAMBURGER -------- */
 nav ul li label div {
   margin: 0 auto;
-  /* margin-top: 30px; */
   width: 1rem;
   height: 1rem;
   position: relative;
@@ -239,3 +264,5 @@ nav ul li input:checked + label > div > span:nth-of-type(4) {
   height: 0.1rem;
   width: 1.4rem;
 }
+
+/* ----------------------------- */

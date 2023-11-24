@@ -42,6 +42,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home  
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="images/verslag/Frontpage-header.png" width="375px" alt="header deel van de front pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Gran Turismo 
@@ -89,13 +90,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Deze week ben ik begonnen met het goed zetten van mijn website, ik was hier voor al begonnen met het los ontdekken van
+  de verschillende sytstemen die ik voor mijn opdracht nodig heb. Na het toepassen van de breakdown schets op de hoofdpagina
+  ,zag ik dat dit betere manier is om mijn html te gaan opstarten.
+
+  Hamburger menu (HTML & CSS)
+  
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Safa           | Daan               | Red          | Chris            |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
