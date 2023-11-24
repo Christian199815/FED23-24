@@ -41,9 +41,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home  
-  <img src="images/verslag/Frontpage-header.png" width="375px" alt="header deel van de front pagina">
-  <img src="images/verslag/Frontpage-selector.png" width="375px" alt="selector deel van de front pagina">
-  <img src="images/verslag/Frontpage-footer.png" width="375px" alt="footer deel van de front pagina">
+  <img src="images/verslag/Frontpage-header.png" width="calc(100% / 3)" alt="header deel van de front pagina">
+  <img src="images/verslag/Frontpage-selector.png" width="calc(100% / 3)" alt="selector deel van de front pagina">
+  <img src="images/verslag/Frontpage-footer.png" width="calc(100% / 3)" alt="footer deel van de front pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Gran Turismo 
