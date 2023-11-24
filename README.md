@@ -70,13 +70,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
   <ul>
     <li>
-      De site van Maserati is echt niet te gebruiken voor mensen die gebruik maken van een screenreader.<br> De tab werkt niet op de navigatie & afbeeldingen hebben geen alt           tekst.
+      De site van Maserati is echt niet te gebruiken voor mensen die gebruik maken van een screenreader.<br> De tab werkt niet op de navigatie & afbeeldingen hebben geen alt tekst.
     </li>
     <li>
-      De site is een grote heksen ketel aan divs, op plekken waar het heel logisch en handig is om een section of article te zetten of al helemaal om een lijstje te maken          staan divs.
+      De site is een grote heksen ketel aan divs, op plekken waar het heel logisch en handig is om een section of article te zetten of al helemaal om een lijstje te maken staan divs.
     </li>
     <li>
-      De site maakt veel gebruik van bewegend beeldmateriaal, materiaal dat uitzichzelf gaat spelen met het geluid aan, en vaak is de knop om het uit te zetten niet zo 123         te vinden.
+      De site maakt veel gebruik van bewegend beeldmateriaal, materiaal dat uitzichzelf gaat spelen met het geluid aan, en vaak is de knop om het uit te zetten niet zo 123 te vinden.
     </li>
   </ul>
 
@@ -115,17 +115,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ,zag ik dat dit betere manier is om mijn html te gaan opstarten.
 
   Hamburger menu (HTML & CSS)
+  Het hamburger menu is opgeboud uit een drietal span's die zo doormiddel van css gedraaid worden om van een hamburger shape naar een kruis shape te veranderen, en natuurlijk ook weer terug. 
+  <img src="images/verslag/hamburger spans.png" width="200vw" alt="Hamburger icon zoals te zien op de site">
+  <img src="images/verslag/open-nav.png" width="200vw" alt="Wanneer de navigatie geopend is">
+  <img src="images/verslag/hamburger-html.png" width="200vw" alt="De html waaruit de hamburger op gebaseerd is">
+  <img src="images/verslag/hamburger-css-rotation.png" width="200vw" alt="De css code die ervoor zorgt dat de spans draaien">
 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Safa                                | Daan                              | Red          | Chris            |
-  | ---                                 | ---                               | ---          | ---              |
-  | Css selectors                       | foto/beeld schalen per format     | en ik dit    | animated sliders |
-  | Beeld Materiaal van site downloaden | -                                 | nog een punt | scroll animaties |
-  | -                                   | -                                 | -            | -                |
+  | Safa                                | Daan                              | Red                            | Chris            |
+  | ---                                 | ---                               | ---                            | ---              |
+  | Css selectors                       | foto/beeld schalen per format     | Gif/Filmpje Responsive maken   | animated sliders |
+  | Beeld Materiaal van site downloaden | -                                 | -                              | scroll animaties |
+  | -                                   | -                                 | -                              | -                |
 
 
   ### Verslag van meeting
