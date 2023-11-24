@@ -41,13 +41,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
   <img src="images/verslag/Frontpage-header.png" width="375px" alt="header deel van de front pagina">
+  <img src="images/verslag/Frontpage-selector.png" width="375px" alt="selector deel van de front pagina">
+  <img src="images/verslag/Frontpage-footer.png" width="375px" alt="footer deel van de front pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Gran Turismo 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="images/verslag/Secpage-header.png" width="375px" alt="header deel van de Gran Turismo pagina">
+  <img src="images/verslag/Secpage-elagance.png" width="375px" alt="Elagance deel van de Gran Turismo pagina">
+  <img src="images/verslag/Secpage-interior.png" width="375px" alt="Interior deel van de Gran Turismo pagina">
+  <img src="images/verslag/Secpage-colorpicker.png" width="375px" alt="Auto kleur kiezer deel van de Gran Turismo pagina">
  
+
+  #### Screenshot(s) van de navigatie (small screen):
+  Gran Turismo 
+  <img src="images/verslag/nav-overview.png" width="375px" alt="Hoofd navigatie gedeelte van de site">
+  <img src="images/verslag/nav-modelselect.png" width="375px" alt="Model selectie gedeelte van de site">
 </details>
 
 
@@ -59,6 +68,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  -De site van Maserati is echt niet te gebruiken voor mensen die gebruik maken van een screenreader. De tab werkt niet op de navigatie & afbeeldingen hebben geen alt tekst.
+  -De site is een grote heksen ketel aan divs, op plekken waar het heel logisch en handig is om een section of article te zetten of al helemaal om een lijstje te maken staan divs
+  -De site maakt veel gebruik van bewegend beeldmateriaal, materiaal dat uitzichzelf gaat spelen met het geluid aan, en vaak is de knop om het uit te zetten niet zo 123 te vinden.
 
 </details>
 
@@ -95,17 +107,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ,zag ik dat dit betere manier is om mijn html te gaan opstarten.
 
   Hamburger menu (HTML & CSS)
-  
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Safa           | Daan               | Red          | Chris            |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Safa                                | Daan                              | Red          | Chris            |
+  | ---                                 | ---                               | ---          | ---              |
+  | Css selectors                       | foto/beeld schalen per format     | en ik dit    | animated sliders |
+  | Beeld Materiaal van site downloaden | -                                 | nog een punt | scroll animaties |
+  | -                                   | -                                 | -            | -                |
 
 
   ### Verslag van meeting
