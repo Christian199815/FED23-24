@@ -22,67 +22,27 @@
   --slider-button-size: 6em;
 }
 
-
-/* ----------- FONTS ----------- */
-/* @font-face {
-  font-family: Everett;
-  src: url("../fonts/Everett-Light-web.woff2") format("woff2");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: Everett;
-  src: url("../fonts/Everett-Medium-web.woff2") format("woff2");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Everett;
-  src: url("../fonts/Everett-Regular-web.woff2") format("woff2");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Anko;
-  src: url("../fonts/Anko-Regular.woff") format("woff");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Maserati;
-  src: url("../fonts/864f8bdc-1a42-4d28-97a5-c15513fd193b.woff2")
-    format("woff2");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: Maserati;
-  src: url("../fonts/4201a9f6-3b6a-4b16-8b4d-39f514509601.woff2")
-    format("woff2");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: icomoon;
-  src: url("../fonts/icomoon.ttf") format("truetype");
-  font-weight: normal;
-} */
-
-/* ----------------------------- */
-
 /* ------------ HTML ----------- */
-html:has([type="checkbox"]:checked) nav section {
-    opacity: 1;
-    pointer-events: auto;
+html:has([type="checkbox"]:checked) header nav section {
+    opacity: .6;
+    /* pointer-events: auto; */
+
+    display:block;
   }
 
+
+
+.hide-from-user{
+  opacity: 0;
+}
 /* ----------------------------- */
 
 /* ------------ BODY ----------- */
 body {
     margin: 0;
-    color: black;
-    background-color: black;
+    padding:0;
+    color: white;
+    background-color: white;
     font-family: Everett;
   }
 
@@ -91,32 +51,21 @@ body {
 /* ------------ MAIN ----------- */
 main section,
 main ul,
-main li {
+main li,
+header {
   margin: 0;
+  padding: 0;
 }
 
 
-main section ul {
-    list-style: none;
-    position: block   ;
-    width: 1vw;
-    display: grid;
-    grid-template-columns: 1fr 24px 306px 24px 1fr;
-    grid-template-rows: auto 15px 39px 15px 52.5px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
+
   
-  main section ul li img {
-    width: 100vw;
-    /* display: block; */
-  }
   
-  main section:nth-of-type(1) ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+/* main section:nth-of-type(1) ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
 
 
 
@@ -126,47 +75,51 @@ main section ul {
 
 
 /* --------- NAVIGATION -------- */
-nav {
+header nav {
   position: fixed;
-  z-index: 4;
+  z-index: 50;
   height: 90px;
-  left: 0;
-  margin-left: 0;
   background-color: #868686, transparent;
   width: 100vw;
 }
 
-nav ul {
+header nav > ul {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 12em;
   list-style: none;
-  margin-left: -2rem;
   align-items: center;
-}
-
-nav ul li:nth-of-type(2),
-nav ul li:nth-of-type(3) {
-  max-width: 2em;
-  height: auto;
-}
-
-
-
-nav section {
-  /* display: none; */
   position: relative;
+  padding: 1em;
+}
+
+header nav > ul li:first-of-type{
+  position: absolute;
+  left: 1.5em;
+  top: 1.5em;
+}
+
+header nav > ul li:nth-of-type(2)
+{
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
+}
+
+
+header nav section {
+  display: none;
+  position: fixed;
+  inset: 0; 
   opacity: 0;
   pointer-events: none;
-  z-index: 4;
+  z-index: 3;
   background-color: black;
   height: 100vh;
   width: 100vw;
 }
 
-nav section ul {
-  /* list-style: none; */
+header nav section ul {
+  list-style: none;
   color: white;
   display: flex;
   flex-direction: column;
@@ -174,7 +127,7 @@ nav section ul {
   gap: 0.1em;
 }
 
-nav section ul li {
+header nav section ul li {
   font-family: Everett;
 }
 
@@ -182,8 +135,223 @@ nav section ul li {
 
 
 
+/* video slider */
+main section:first-of-type ul {
+  display: flex;
+  position: relative;
+  /* min-height: 100vh; */
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+
+  /* border: solid pink; */
+}
+
+main section:first-of-type li {
+  scroll-snap-align: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+
+}
 
 
+main section:first-of-type li h2 {
+  position: absolute;
+  bottom: 2em;
+  font-family: Everett;
+  font-weight: 100;
+  font-size: 2em;
+
+  margin: 8px 0px 15px;
+  left: 0;
+  right: 0;
+}
+
+main section:first-of-type li p:first-of-type {
+  position: absolute;
+  bottom: 7em;
+
+  font-family: Everett;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+main section:first-of-type li p:nth-of-type(2) {
+  position: absolute;
+  bottom: 1em;
+
+  font-family: Everett;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+main section:first-of-type li :is(h2, p)  {
+  color: white;
+  padding: 2rem;
+}
+
+/* backgrounds */
+
+main section:first-of-type li:first-of-type{
+  background-image: url("../images/mobile/mc20-notte-home-hero-mbl.jpg");
+  background-size: cover;
+}
+
+main section:first-of-type li:nth-of-type(2){
+  background-image: url("../images/mobile/MAS_MCXtrema_Hero_Reel_Thumb.webp");
+  background-size: cover;
+}
+
+main section:first-of-type li:nth-of-type(3){
+  background-image: url("../images/mobile/Folgore.webp");
+  background-size: cover;
+}
+
+main section:first-of-type li:nth-of-type(4){
+  background-image: url("../images/mobile/05_vertical_2.webp");
+  background-size: cover;
+}
+
+main section:first-of-type li:nth-of-type(5){
+  background-image: url("../images/mobile/Maserati_Grecale_hero_mobile (1).webp");
+  background-size: cover;
+}
+
+main section:first-of-type li:nth-of-type(6){
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---------------------------- */
+
+/* Model selector */
+main section:nth-of-type(2) {
+  position: relative;
+  background-color: black;
+}
+
+main section:nth-of-type(2) > h2{
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+  font-family: Everett, sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+main section:nth-of-type(2) > img{
+  max-width: 100%;
+  min-height: 450px;
+}
+
+main section:nth-of-type(2) ul{
+  list-style: none;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  
+}
+
+main section:nth-of-type(2) ul li {
+  min-width: 360px;;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  scroll-snap-align: center;
+  text-align: center;
+
+}
+
+
+
+
+
+/* folgore */
+main section:nth-of-type(3) video {
+  max-width: 100%;
+}
+
+
+
+
+
+/* De world of Maserati */
+main section:nth-of-type(4){
+  border: solid pink;
+
+}
+
+main section:nth-of-type(4) h2{
+  color: black;
+}
+
+main section:nth-of-type(4) ul {
+  display: flex;
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+  scroll-snap-type: x mandatory;
+}
+
+main section:nth-of-type(4) li {
+  min-height: 100vh;
+  min-width: 100vw;
+
+  scroll-snap-align: center;
+}
+
+
+/* backgrounds */
+main section:nth-of-type(4) li:first-of-type{
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+main section:nth-of-type(4) li:nth-of-type(2){
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+main section:nth-of-type(4) li:nth-of-type(3){
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+
+}
+
+main section:nth-of-type(4) li:nth-of-type(4){
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+main section:nth-of-type(4) li:nth-of-type(5){
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+main section:nth-of-type(4) li:nth-of-type(6){
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
 
 
 
@@ -266,3 +434,139 @@ nav ul li input:checked + label > div > span:nth-of-type(4) {
 }
 
 /* ----------------------------- */
+
+
+
+/* shop section */
+main section:nth-of-type(5) {
+  background-image: url("../images/frontpage/img-carrousel/header-slider-mc20.jpg");
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+main section:nth-of-type(5) h2 {
+  font-family: Everett, sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+
+  width: 14em;
+}
+
+
+
+
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+}
+
+footer ul li ul{
+  list-style: none;
+
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+footer button, footer input {
+  /* position: absolute;
+  left: 2em;
+  right: 2em;
+
+  text-align: left; */
+
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+footer ul > li{
+  position: relative;
+  display: inline-block;
+}
+
+footer ul li ul li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+footer ul li ul li a:hover {background-color: #ddd;}
+
+.show{
+ display:block;
+}
+
+
+/* a style */
+.animation-a-cl{
+  text-decoration: none;
+  font-family: Everett, sans-serif;
+  font-size: .8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 18px 36px 18px 21px;
+  background-color: yellow;
+  
+  text-align: center;
+  min-width: 420px;
+  min-height: 50px;
+  
+  
+  
+    color: white;
+    background: FFC844; /* default color */
+
+
+    background: linear-gradient(100deg, #FFC844 50%, #1C3775 50%) right;
+    background-size: 240% 100%;
+
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.animation-a-bw{
+  text-decoration: none;
+  font-family: Everett, sans-serif;
+  font-size: .8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 18px 36px 18px 21px;
+  background-color: white;
+  
+  text-align: center;
+  min-width: 420px;
+  min-height: 50px;
+  
+  
+  border: solid white .25em;
+    color: white;
+    background: FFC844; /* default color */
+
+
+    background: linear-gradient(100deg, transparent, white 100%) right;
+    background-size: 200%;
+
+    transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.animation-a-cl:hover, .animation-a-bw:hover{
+  background-position: left;
+}
