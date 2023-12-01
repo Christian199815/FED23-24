@@ -154,7 +154,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   Lekker bezig geweest met het maken van verschiullende code pen bestanden om te testen met verschillende functies zonder dat het hoofd bestand breekt.
-  Daarnaast het vullen van de 2e pagina qua htmml.
+  <img src="images/verslag/button.png" width="200vw" alt="afbeelding van de knop op de site">
+   <img src="images/verslag/codepen-nav.png" width="200vw" alt="afbeelding van de codepen waarop de navigatie gezet is">
+  Daarnaast het vullen van de 2e pagina qua htmml voor 80% voltooid.
 
 
   ### Agenda voor meeting
