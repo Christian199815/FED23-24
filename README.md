@@ -115,7 +115,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ,zag ik dat dit betere manier is om mijn html te gaan opstarten.
 
   Hamburger menu (HTML & CSS)
-  Het hamburger menu is opgeboud uit een drietal span's die zo doormiddel van css gedraaid worden om van een hamburger shape naar een kruis shape te veranderen, en natuurlijk ook weer terug. 
+  Het hamburger menu is opgeboud uit een drietal span's die zo doormiddel van css gedraaid worden om van een hamburger shape naar een kruis shape te veranderen, en natuurlijk ook weer terug. <br>
   <img src="images/verslag/hamburger spans.png" width="200vw" alt="Hamburger icon zoals te zien op de site">
   <img src="images/verslag/open-nav.png" width="200vw" alt="Wanneer de navigatie geopend is">
   <img src="images/verslag/hamburger-html.png" width="200vw" alt="De html waaruit de hamburger op gebaseerd is">
@@ -153,17 +153,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Lekker bezig geweest met het maken van verschiullende code pen bestanden om te testen met verschillende functies zonder dat het hoofd bestand breekt.
+  Daarnaast het vullen van de 2e pagina qua htmml.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Safa               | Red                          | Daan                     | Chris            |
+  | ---                | ---                          | ---                      | ---              |
+  | over Div's vragen  | Keyframes animaties          | Flexbox inconsistencies  | Geen vragen      |
+  | code controleren   | css code herhaling voorkomen | Css en welke je gebruikt |                  |
+  | ...                | ...                          | wanneer grid             | ...              |
 
 
   ### Verslag van meeting
