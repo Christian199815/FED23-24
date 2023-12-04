@@ -23,18 +23,27 @@
 }
 
 /* ------------ HTML ----------- */
-html:has([type="checkbox"]:checked) header nav section {
+html:has([type="checkbox"]:checked) header nav ul li:nth-of-type(1) {
     opacity: .6;
     /* pointer-events: auto; */
-
     display:block;
   }
-
+  html:has([type="checkbox"]:checked){
+    overflow: hidden;
+  }
 
 
 .hide-from-user{
   opacity: 0;
+  display: none;
 }
+
+
+/* element template */
+
+
+
+
 /* ----------------------------- */
 
 /* ------------ BODY ----------- */
@@ -44,6 +53,7 @@ body {
     color: white;
     background-color: white;
     font-family: Everett;
+    
   }
 
 /* ----------------------------- */
@@ -73,12 +83,13 @@ header {
 
 
 
-
+header{
+  position: relative;
+}
 /* --------- NAVIGATION -------- */
 header nav {
   position: fixed;
   z-index: 50;
-  height: 90px;
   background-color: #868686, transparent;
   width: 100vw;
 }
@@ -89,47 +100,54 @@ header nav > ul {
   list-style: none;
   align-items: center;
   position: relative;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
-header nav > ul li:first-of-type{
+header nav > ul li:nth-of-type(2){
   position: absolute;
   left: 1.5em;
   top: 1.5em;
 }
 
-header nav > ul li:nth-of-type(2)
+header nav > ul li:nth-of-type(3)
 {
   position: absolute;
   right: 1.5em;
   top: 1.5em;
 }
 
-
-header nav section {
+header nav ul li:nth-of-type(1) {
   display: none;
   position: fixed;
   inset: 0; 
   opacity: 0;
-  pointer-events: none;
-  z-index: 3;
   background-color: black;
-  height: 100vh;
-  width: 100vw;
 }
 
-header nav section ul {
-  list-style: none;
+header nav ul li:nth-of-type(1) ul {
+   position: absolute;
+  top: 4em;
+  /*
+  left: 8em;
   color: white;
+  */
+  list-style: none; 
+
+  /*  
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  gap: 0.1em;
+  justify-content: center;
+  align-items: center;
+  gap: .25em;
+  */
+
+   font-family: Everett, sans-serif;
+  font-size: 1em;
+  font-weight: 800;  
 }
 
-header nav section ul li {
-  font-family: Everett;
-}
+
+
 
 /* ----------------------------- */
 
