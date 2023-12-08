@@ -1,0 +1,56 @@
+main header {
+    color: var(--white);
+}
+
+/* scroll light up text */
+main section:first-of-type{
+    color: var(--white);
+}
+
+/* the others just travel */
+main section:nth-of-type(2){
+    color: var(--white);
+}
+
+
+/* start of the page  */
+main section:nth-of-type(3){
+    color: var(--white);
+}
+
+/* Chapter 1, Design  */
+main section:nth-of-type(4){
+    color: var(--white);
+}
+
+/* power */
+main section:nth-of-type(5){
+    color: var(--white);
+}
+
+/* six card slider  */
+main section:nth-of-type(6){
+    color: var(--white);
+}
+
+/* car colour editor */
+main section:nth-of-type(7){
+    color: var(--white);
+}
+
+/* Chapter 2, Innovative */
+main section:nth-of-type(8){
+    color: var(--white);
+}
+
+/* Chapter 3, Presentations */
+main section:nth-of-type(9){
+    color: var(--white);
+}
+
+/* specifications */
+main section:nth-of-type(10){
+    color: var(--white);
+}
+
+

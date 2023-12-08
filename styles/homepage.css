@@ -1,0 +1,429 @@
+/* -------HERO SLIDER---------- */
+main section:first-of-type ul {
+  display: flex;
+  position: relative;
+  /* min-height: 100vh; */
+
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+  list-style: none;
+
+  scroll-snap-type: x mandatory;
+}
+
+main section:first-of-type li {
+  position: relative;
+
+  min-width: 100vw;
+  min-height: 100vh;
+
+  scroll-snap-align: center;
+}
+
+main section:first-of-type li h2 {
+  position: absolute;
+  bottom: 9rem;
+  left: var(--video-text-card-align);
+
+  margin: 8px 0px 15px;
+
+  font-family: Everett;
+  font-weight: 100;
+  font-size: 2em;
+
+  animation: enlarge-element linear both;
+  animation-timeline: scroll();
+  animation-range: entry 50% cover 50%;
+}
+
+main section:first-of-type li p:first-of-type {
+  position: absolute;
+  bottom: 12rem;
+  left: var(--video-text-card-align);
+
+  font-family: Everett;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+main section:first-of-type li p:nth-of-type(2) {
+  position: absolute;
+  bottom: 7rem;
+  left: var(--video-text-card-align);
+
+  font-family: Everett;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+main section:first-of-type li p:nth-of-type(3) {
+  position: absolute;
+  bottom: 2.5em;
+  left: var(--video-slider-info-align);
+
+  font-family: Everett;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+main section:first-of-type li :is(h2, p) {
+  color: white;
+}
+
+/* backgrounds */
+
+main section:first-of-type li:first-of-type {
+  background-image: url("../images/mobile/mc20-notte-home-hero-mbl.jpg");
+  background-size: cover;
+}
+
+main section:first-of-type li:nth-of-type(2) {
+  background-image: url("../images/mobile/MAS_MCXtrema_Hero_Reel_Thumb.webp");
+  background-size: cover;
+}
+
+main section:first-of-type li:nth-of-type(3) {
+  background-image: url("../images/mobile/Folgore.webp");
+  background-size: cover;
+}
+
+main section:first-of-type li:nth-of-type(4) {
+  background-image: url("../images/mobile/05_vertical_2.webp");
+  background-size: cover;
+}
+
+main section:first-of-type li:nth-of-type(5) {
+  background-image: url("../images/mobile/Maserati_Grecale_hero_mobile (1).webp");
+  background-size: cover;
+}
+
+main section:first-of-type li:nth-of-type(6) {
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+main section:first-of-type > img {
+  position: absolute;
+  bottom: 1em;
+  left: var(--video-slider-info-align);
+
+  width: 20%;
+  aspect-ratio: 3/1;
+}
+
+/* ---------------------------- */
+
+/* ------MODEL SELECTOR-------- */
+main section:nth-of-type(2) {
+  position: relative;
+
+  background-color: var(--white);
+}
+
+main section:nth-of-type(2) > h2 {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0;
+
+  text-align: center;
+  font-family: Everett, sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+
+  animation: reveal linear;
+  animation-timeline: view();
+}
+
+main section:nth-of-type(2) > img {
+  max-width: 100%;
+  min-height: 450px;
+}
+
+main section:nth-of-type(2) ul {
+  position: relative;
+  bottom: 11rem;
+  overflow: auto;
+
+  display: flex;
+  padding-left: 25%;
+  padding-right: 25%;
+
+  list-style: none;
+
+  scroll-snap-type: x mandatory;
+}
+
+main section:nth-of-type(2) ul::-webkit-scrollbar {
+  display: none;
+}
+
+main section:nth-of-type(2) ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 360px;
+
+  text-align: center;
+
+  scroll-snap-align: center;
+}
+
+main section:nth-of-type(2) span {
+  width: 5rem;
+  height: 20rem;
+
+  background-color: white;
+}
+
+main section:nth-of-type(2) section {
+  position: relative;
+  bottom: 3rem;
+  left: 1em;
+
+  color: black;
+}
+
+main section:nth-of-type(2) section a {
+  position: absolute;
+  left: 0;
+  right: 2rem;
+}
+
+/* folgore */
+main section:nth-of-type(3) {
+  position: relative;
+  overflow: hidden;
+
+  height: 900px;
+
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+main section:nth-of-type(3) h2 {
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  color: black;
+
+  
+}
+
+main section:nth-of-type(3) h3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  color: black;
+}
+
+main section:nth-of-type(3) a {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+  width: 20px;
+  height: 10px;
+  margin: auto;
+}
+
+main section:nth-of-type(3) video {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  width: 100%;
+  height: 100%;
+  
+
+  /* clip-path: inset(0 25% 0 25%); */
+  view-timeline-axis: block;
+
+  animation: linear enlarge-element both;
+  animation-timeline: view();
+	/* Tweak range when effect should run*/
+	animation-range: entry 70% cover 90%;
+}
+
+
+@keyframes enlarge-element {
+	from {
+		opacity: 0;
+    scale: 0.25;
+    
+	}
+	to {
+		opacity: 1;
+    scale: 5;
+    }
+}
+
+
+
+
+/* De world of Maserati */
+main section:nth-of-type(4) {
+}
+
+main section:nth-of-type(4) h2 {
+  color: black;
+}
+
+main section:nth-of-type(4) ul {
+  position: relative;
+  overflow: auto;
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  scroll-snap-type: x mandatory;
+}
+
+main section:nth-of-type(4) li {
+  height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr 19fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 7fr 1fr 2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  font-family: Everett, sans-serif;
+  scroll-snap-align: center;
+
+  object-fit: cover;
+}
+
+main section:nth-of-type(4) li h3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: Everett, sans-serif;
+  font-size: 3em;
+  font-weight: 100;
+
+}
+
+main section:nth-of-type(4) p:first-of-type {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-weight: 500;
+  text-transform: uppercase;
+  /* font-size: .75em; */
+}
+
+main section:nth-of-type(4) li p:nth-of-type(2) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-weight: 500;
+  /* font-size: .75em; */
+}
+
+main section:nth-of-type(4) li a {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+  padding: 18px 36px 18px 21px;
+  text-align: center;
+  margin: auto
+}
+
+main section:nth-of-type(4) ul::-webkit-scrollbar {
+  display: none;
+}
+
+/* backgrounds */
+main section:nth-of-type(4) li:first-of-type {
+  /*  */
+}
+
+main section:nth-of-type(4) li:nth-of-type(2) {
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+main section:nth-of-type(4) li:nth-of-type(3) {
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+main section:nth-of-type(4) li:nth-of-type(4) {
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+main section:nth-of-type(4) li:nth-of-type(5) {
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+main section:nth-of-type(4) li:nth-of-type(6) {
+  background-image: url("../images/mobile/MC20_Cielo_global_premier_vertical.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* shop section */
+main section:nth-of-type(5) {
+  background-image: url("../images/store_vertical.jpg");
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+main section:nth-of-type(5) h2 {
+  width: 14em;
+
+  font-family: Everett, sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+/* contact nav */
+main section:nth-of-type(6) {
+  background-color: black;
+}

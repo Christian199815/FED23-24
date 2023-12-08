@@ -9,16 +9,16 @@
       <title>Maserati S.p.A. - Modena, Italy</title>
 
       <link href="styles/fonts.css" rel="stylesheet" />
-      <link href="styles/mobile.css" rel="stylesheet" />
+      <link href="styles/style.css" rel="stylesheet" />
+      <link href="styles/homepage.css" rel="stylesheet" />
       <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     </head>
-  </head>
 
   
   <body>
     <header>
       <nav>
-        <h3 class="hide-from-user">Hidden nav menu</h3>
+        <h3 tabindex="-1" class="hide-from-user">Hidden nav menu</h3>
         <ul>
           <li>
             <ul>
@@ -32,7 +32,7 @@
             <img src="/images/mobile/redesign_menu_logo_white.svg" alt="" />
           </li>
 
-          <li>
+          <li tabindex="0">
             <input type="checkbox" id="hamburger" />
             <label for="hamburger" aria-label="toggle menu">
               <div>
@@ -49,6 +49,8 @@
     </header>
 
     <main>
+
+      <!-- hero slider -->
       <section>
         <h2 class="hide-from-user">video slider</h2>
         <ul>
@@ -56,48 +58,56 @@
             <h2>MC20 Notte</h2>
             <p>Race the night</p>
             <p>Discover more ></p>
+            <p>1/6</p>
           </li>
 
           <li>
             <h2>MCExtema</h2>
             <p>The most powerful track-only maserati</p>
             <p>Discover more ></p>
+            <p>2/6</p>
           </li>
 
           <li>
             <h2>Folgore</h2>
             <p>Maserati goes electric</p>
             <p>Discover more ></p>
+            <p>3/6</p>
           </li>
 
           <li>
             <h2>Gran Turismo</h2>
             <p>The others only travel</p>
             <p>Discover more ></p>
+            <p>4/6</p>
           </li>
 
           <li>
             <h2>Grecale</h2>
             <p>Make daily life special</p>
             <p>Discover more ></p>
+            <p>5/6</p>
           </li>
 
           <li>
             <h2>MC20 Cielo</h2>
             <p>Beyond the sky</p>
             <p>Discover more ></p>
+            <p>6/6</p>
           </li>
         </ul>
         <!-- Slider animation -->
-        <img src="" alt="" />
+        
+        <img src="images/slider.png" alt="" />
       </section>
 
+      <!-- models selector -->
       <section>
         <h2>Een bijzonder modelreeks</h2>
         <!-- background that changes upon different car -->
         <img src="../images/frontpage/models/Hp-Model-Carousel-GT.png" alt="" />
         <!-- divider -->
-        <img src="" alt="" />
+        <span></span>
         <ul>
           <li>
             <h3>Gran Turismo</h3>
@@ -164,22 +174,25 @@
         </section>
       </section>
 
+      <!-- folgore video -->
       <section>
         <h2>Folgore</h2>
         <h3>
           Het opwindendste Maserati-verhaal ooit. De Folgore koppelt innovatieve
           prestaties naadloos aan luxueus Italiaans topdesign.
         </h3>
-        <video <!-- src="video/Hero_Folgore-1920x1080.mp4" -->
-          alt="video over de nieuwe folgore lijn" >
+        <video controls autoplay src="video/Hero_Folgore-1920x1080.mp4"
+          alt="video over de nieuwe folgore lijn"
+          class="revealing-image" >
         </video>
         <a class="animation-a-cl" href="#">Discover more</a>
       </section>
 
+      <!-- full page caro -->
       <section>
         <h2>The world of maserati</h2>
         <ul>
-          <li>
+          <li id="#news1">
             <h3>
               Maserati unveils MC20 Notte, a fierce creature of the nocturnal
               world
@@ -191,7 +204,7 @@
             <img src="" alt="" />
           </li>
 
-          <li>
+          <li id="#news2">
             <h3>Quattroporte Turns 60</h3>
             <p>News</p>
             <p>2/6</p>
@@ -200,7 +213,7 @@
             <img src="" alt="" />
           </li>
 
-          <li>
+          <li id="#news3">
             <h3>New Maserati Tipo Folgore unveiled for Formula E Season 10</h3>
             <p>News</p>
             <p>3/6</p>
@@ -209,7 +222,7 @@
             <img src="" alt="" />
           </li>
 
-          <li>
+          <li id="#news4">
             <h3>
               Maserati GT2 debuts on the track at Circuit Paul Ricard and
               already gets the podium with LP Racing in final round of the 2023
@@ -222,7 +235,7 @@
             <img src="" alt="" />
           </li>
 
-          <li>
+          <li id="#news5">
             <h3>
               Maserati MSG Racing reveals Season 10 Formula E driver lineup
             </h3>
@@ -233,7 +246,7 @@
             <img src="" alt="" />
           </li>
 
-          <li>
+          <li id="#news6">
             <h3>70th Anniversary of Fangio's Italian Grand Prix Victory</h3>
             <p>News</p>
             <p>6/6</p>
@@ -242,13 +255,27 @@
             <img src="" alt="" />
           </li>
         </ul>
+
+        <!-- <nav>
+          <ul>
+            <li><a href="#news1" aria-label="go to news item 1"></a></li>
+            <li><a href="#news2" aria-label="go to news item 2"></a></li>
+            <li><a href="#news3" aria-label="go to news item 3"></a></li>
+            <li><a href="#news4" aria-label="go to news item 4"></a></li>
+            <li><a href="#news5" aria-label="go to news item 5"></a></li>
+            <li><a href="#news6" aria-label="go to news item 6"></a></li>
+          </ul>
+
+        </nav> -->
       </section>
 
+      <!-- merch ad -->
       <section>
         <h2>Discover every Collections on the Maserati store</h2>
         <a class="animation-a-bw" href="#">Discover More ></a>
       </section>
 
+      <!-- Get in touch page -->
       <section>
         <ul>
           <li>
@@ -306,6 +333,7 @@
       </section>
     </main>
 
+    <!--full footer -->
     <footer>
       <!-- logo -->
       <img src="" alt="" />

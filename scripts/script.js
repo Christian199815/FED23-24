@@ -63,26 +63,26 @@ function changeImage(isRight)
 }}
 
 
-function isInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+// function isInViewport(el) {
+//     const rect = el.getBoundingClientRect();
+//     return (
+//         rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
 
-    );
-}
+//     );
+// }
 
-function checkVideo()
-{
-    if(isInViewport(folgoreVideo))
-    {
-        console.log("video detected");
-    }
-}
+// function checkVideo()
+// {
+//     if(isInViewport(folgoreVideo))
+//     {
+//         console.log("video detected");
+//     }
+// }
 
-window.addEventListener('scroll', checkVideo);
+// window.addEventListener('scroll', checkVideo);
 
 footerButton1.onclick = DropdownToggle();
 function DropdownToggle() {
