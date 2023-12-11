@@ -330,8 +330,9 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
-1. bron 1
-2. bron 2
-3. ...
+1. Voor px naar em convertie (https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+2. Voor het opzetten van Css Grid (https://cssgrid-generator.netlify.app/)
+3. Voor hulp bij denk problemen (Sanne 't Hooft)
+4. Dropdowns van (https://blog.logrocket.com/making-dropdown-menus-css/)
 
 </details>
