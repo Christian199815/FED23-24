@@ -217,13 +217,20 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Eindgesprek (week 5)
 
+<style>
+  ul{
+    display:flex;
+    list-style: none;
+  }
+</style>
+
 
 <h2>De surface planes van mijn website</h2>
 
 <h5>Mijn top-punten maar ook mijn diepte-punten</h5>
 
 <h3>Loading</h3>
-<ul style="display: flex">
+<ul>
   <li><img src="images/verslag/SurfacePlane-Loader.png" width="375px" alt="screenshot van de page loading animatie"></li>
   <li><img src="images/verslag/loader-html.png" width="375px" alt="html code van de page loading animatie"></li>
   <li><img src="images/verslag/loader-js.png" width="375px" alt="Javascript code van de page loading animatie"></li>
@@ -237,12 +244,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 
 <h3>DOM Manipulatie</h3>
-<ul style="display: flex">
+<ul>
   <li><img src="images/verslag/DOM-manipulatie-1-html.png" width="300vw" alt="screenshot van de dom manipulatie voor de GranTurismo Modena"></li>
   <li><img src="images/verslag/DOM-manipulatie-1-html.png" width="300vw" alt="screenshot van de dom manipulatie voor de GranTurismo Modena"></li>
   <li><img src="images/verslag/DOM-manipulatie-2-html.png" width="300vw" alt="screenshot van de dom manipulatie voor de GranTurismo Folgore"></li>
 </ul>
-<ul style="display: flex">
+<ul>
   <li><img src="images/verslag/DOM-manipulatie-arrays-js.png" width="200vw" alt="Javascript code voor de data in de arrays">></li>
   <li><img src="images/verslag/DOM-manipulatie-create-js.png" width="200vw" alt="Javascript code voor het aanmaken van de observers"></li>
   <li><img src="images/verslag/DOM-manipulatie-elements-js.png" width="200vw" alt="Javascript code voor het aanmaken van variabelen waar de html elementen aan gekoppeld worden"></li>
@@ -252,7 +259,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <p>Ik manipuleer de DOM door dat ik een lijstje heb die ik doormiddel van flexbox op zijn kant heb gezet en hier een carroussel van heb weten te maken. Onder de lijst staan een aantal specificaties die voor de verschillende auto's net weer iets anders zijn.Daarom heb ik een een script gemaakt waar ik de waardes kan aanpassen. Dit doe ik doormiddel van een intersect observer.</p>
 
 <h3>Custom Properties</h3>
-<ul style="display:flex">
+<ul>
   <li><img src="images/verslag/Custom-alignment-css.png" width="400vw" alt="custom propertie voor het uitlijnen van elementen"></li>
   <li><img src="images/verslag/Custom-prop-animation-css.png" width="400vw" alt="custom propertie voor het definieren vanaf waar de scroll animatie moet beginnen"></li>
 </ul>
@@ -261,7 +268,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 </p>
 
 <h3>Advanced Positioning</h3>
-<ul style="display:flex">
+<ul>
   <li><img src="images/verslag/Position-fixed-relative-css.png" width="300vw" alt="css code voor position fixed en position relative"></li>
   <li><img src="images/verslag/Position-absolute-css.png" width="300vw" alt="css code voor position absolute"></li>
   <li><img src="images/verslag/Position-sticky-css.png" width="300vw" alt="css code voor position sticky"></li>
@@ -270,7 +277,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 </p>
 
 <h3>Scroll animaties</h3>
-<ul style="display:flex">
+<ul>
   <li><img src="images/verslag/Scroll-small-html.png" width="200vw" alt="screenshot van de pagina waar het element klein te zien is"></li>
   <li><img src="images/verslag/Scroll-large-html.png" width="200vw" alt="screenshot van de pagina waar het element groter te zien is"></li>
   <li><img src="images/verslag/Scroll-animation-css.png" width="200vw" alt="css code voor het aanroepen van de scroll animatie"></li>
@@ -280,12 +287,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 </p>
 
 <h3>BlingBling</h3>
-<ul style="display:flex">
+<ul>
   <li><img src="images/verslag/Bling-1-html.png" width="300vw" alt="screenshot van de pagina met de blauwe auto"></li>
   <li><img src="images/verslag/Bling-2-html.png" width="300vw" alt="screenshot van de pagina met de gele auto"></li>
   <li><img src="images/verslag/Bling-3-html.png" width="300vw" alt="screenshot van de pagina met de grijze auto"></li>
 </ul>
-<ul style="display:flex">
+<ul>
   <li><img src="images/verslag/Bling-change-function-js.png" width="200vw" alt="Javascript code met functie voor het veranderen"></li>
   <li><img src="images/verslag/Bling-dictionaries-js.png" width="200vw" alt="Javascript code met dictionaries met daarin de data per auto kleur"></li>
   <li><img src="images/verslag/Bling-elements-js.png" width="200vw" alt="Javascript code die de html elementen aan de js koppeld"></li>
@@ -295,11 +302,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 </p>
 
 <h3>Hamburger zonder JS</h3>
-<ul style="display:flex">
+<ul>
   <li><img src="images/verslag/hamburger-closed.png" width="400vw" alt="screenshot van de hamburger gesloten"></li>
   <li><img src="images/verslag/hamburger-open.png" width="400vw" alt="screenshot van de hamburger geopend"></li>
 </ul>
-<ul style="display:flex">
+<ul>
   <li><img src="images/verslag/hamburger-html-new.png" width="300vw" alt="html code van de hamburger"></li>
   <li><img src="images/verslag/hamburger-span-rotater.png" width="300vw" alt="css code van de spans die geroteerd worden"></li>
   <li><img src="images/verslag/hamburger-section-enable.png" width="300vw" alt="css code voor het aan en uit zetten van de section"></li>
