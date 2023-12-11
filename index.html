@@ -1,90 +1,572 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="jouw naam" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="author" content="jouw naam" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Howdy FED2324</title>
+      <title>Maserati S.p.A. - Modena, Italy</title>
 
-    <link href="styles/style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-  </head>
+      <link href="styles/fonts.css" rel="stylesheet" />
+      <link href="styles/style.css" rel="stylesheet" />
+      <link href="styles/homepage.css" rel="stylesheet" />
 
-  <body onload="changeImage(1)">
-    <script defer src="../scripts/script.js"></script>
-    <nav>
-      <!-- left items -->
-      <ul>
-        <li><a href="#">Models</a></li>
-        <li><a href="#">Brand</a></li>
-        <li><a href="#">Ownership</a></li>
-        <li><a href="#">Corse</a></li>
-      </ul>
+      <link rel="icon" type="image/svg+xml" href="images/icons/favicon_redesign.ico" />
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>>
 
-      <a href="#"
-        ><img
-          src="../images/frontpage/desktop_logo_white.svg"
-          alt="main logo of Maserati, which is a home link"
-      /></a>
+  
+  <body>
+    <header>
+      <nav>
+        <h3 tabindex="-1" class="hide-from-user">Hidden nav menu</h3>
 
-      <ul>
-        <li><button>Build your own</button></li>
-        <li><a href="#">location icon</a></li>
-        <li><a href="#">drive icon</a></li>
-      </ul>
-    </nav>
+        <section>
+          <ul>
+            <li><h3>Models</h3></li>
+            <li><h3>Brand</h3></li>
+            <li><h3>Ownership</h3></li>
+          </ul>
+        </section>
 
-    <main>
-      <!-- video carrousel, height 914px -->
-      <header>
         <ul>
-          <!-- MC20 NOTTE -->
           <li>
-            <video autoplay muted loop id="myVideo">
-              <source src="../video/Preview_mc20-notte.mp4" type="video/mp4" />
-            </video>
-            <button>"<"</button>
-            <button>">"</button>
+            <a href="index.html">
+              <img src="images/icons/redesign_menu_logo_white.svg" alt="logo of Maserati"/>
+              </a>
           </li>
 
-          <!-- MC20 NOTTE -->
+          <li tabindex="0">
+            <input type="checkbox" id="hamburger" />
+            <label for="hamburger" aria-label="toggle menu">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </label>
+          </li>
+
+          <!-- location icon -->
           <li>
-            <video autoplay muted loop id="myVideo">
-              <source src="../video/Preview_mc20-notte.mp4" type="video/mp4" />
-            </video>
-            <button>"<"</button>
-            <button>">"</button>
+            <img src="images/icons/location-icon.png" alt="icon for location services" />
+          </li>
+          <!-- Configurator icon -->
+          <li>
+            <img src="images/icons/customizer-icon.png" alt="icon for the car customization" />
           </li>
         </ul>
-      </header>
 
-      <!-- model selection, height 462px -->
+
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- hero slider -->
       <section>
-      
-            <img id="modelSelectImage" src="" alt="" />
-            <button onclick="changeImage(1)"">left</button>
-            <button onclick="changeImage(0)">"right"</button>
+        <h2 class="hide-from-user">video slider</h2>
+
+        <ul class="carousel is-set">
+
+          <li class="carousel-seat">
+            <h2>MC20 Notte</h2>
+            <p>Race the night</p>
+            <p>Discover more ></p>
+            <p>1/5</p>
+          </li>
+
+          <li class="carousel-seat">
+            <h2>MCExtema</h2>
+            <p>The most powerful track-only maserati</p>
+            <p>Discover more ></p>
+            <p>2/5</p>
+          </li>
+
+          <li class="carousel-seat">
+            <h2>Maserati at Montery Car Week/h2>
+            <p>A full week of exclusive experiences</p>
+            <p>Discover more ></p>
+            <p>3/5</p>
+          </li>
+
+          <li class="carousel-seat">
+            <h2>Ghibli 334 Ultima &AMP; Levante V8 Ultima</h2>
+            <p>Roaring Elegance</p>
+            <p>Discover more ></p>
+            <p>4/5</p>
+          </li>
+
+          <li class="carousel-seat">
+            <h2>DB Essentials</h2>
+            <p>A tailor made prospective</p>
+            <p>Discover more ></p>
+            <p>5/5</p>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- models selector -->
+      <section>
+        <h2 tabindex="0">An extraordinary model range</h2>
+        <h3 tabindex="0">Gamma Maserati</h3>
+        <!-- background that changes upon different car -->
+        <img src="images/Home/car-selector-backgrounds/Hp-Model-Carousel-GT.png" alt="" />
         
+        <ul>
+          <li>
+            <a href="#autoModel-1"><h3>GranTurismo</h3></a> 
+            <img
+              src="images/Home/car-selector-models/GT_Thumbs_MY24_Side-Folgore (1).webp"
+              alt="side view of the Gran Turismo"
+            />
+          </li>
 
+          <li>
+            <a href="#autoModel-2"><h3>Grecale</h3></a>
+            <img
+              src="images/Home/car-selector-models/Grecale_00000.webp"
+              alt="side view of the Grecale"
+            />
+          </li>
 
+          <li>
+            <a href="#autoModel-3"><h3>Ghibli</h3></a>
+            <img
+              src="images/Home/car-selector-models/Ghibli_00000.webp"
+              alt="side view of the Ghibli"
+            />
+          </li>
 
+          <li>
+            <a href="#autoModel-4"><h3>Levante</h3></a>
+            <img
+              src="images/Home/car-selector-models/Levante_00000.webp"
+              alt="side view of the Levante"
+            />
+          </li>
+
+          <li>
+            <a href="#autoModel-5"><h3>Quattroporte</h3></a>
+            <img
+              src="images/Home/car-selector-models/QP_00000.webp"
+              alt="side view of the Quattroporte"
+            />
+          </li>
+
+          <li>
+            <a href="#autoModel-6"><h3>MC20</h3></a>
+            <img
+              src="images/Home/car-selector-models/MC20_00000.webp"
+              alt="side view of the MC20"
+            />
+          </li>
+
+          <li>
+            <a href="#autoModel-7"><h3>MC20 Cielo</h3></a>
+            <img
+              src="images/Home/car-selector-models/MC20_Cielo_00000.webp"
+              alt="side view of the MC20 Cielo"
+            />
+          </li>
+        </ul>
+
+        <section>
+          <!-- heading die past bij de auto keuze -->
+          <h3 tabindex="0">The Others Just Travel</h3>
+          <p >Ook leverbaar als Bev</p>
+
+            <a class="animation-a-cl" href="#">Configure your own car</a>
+
+          <!-- <a class="animation-a-cl" href="#">Configure your own car</a> -->
+        </section>
       </section>
 
-      <!-- folgore video introduction, height 1353px -->
+      <!-- folgore video -->
       <section>
-        <video autoplay muted loop id="folgoreVideo">
-          <source src="../video/Hero_Folgore-1920x1080.mp4" type="video/mp4" />
+        <h2 tabindex="0">Folgore</h2>
+        <h3 tabindex="0">
+          Het opwindendste Maserati-verhaal ooit. De Folgore koppelt innovatieve
+          prestaties naadloos aan luxueus Italiaans topdesign.
+        </h3>
+
+        <section>
+          <video tabindex="0" loop autoplay src="video/Hero_Folgore-1920x1080.mp4"
+          alt="video about the new Folgore series"
+          class="revealing-image" >
         </video>
+        </section>
+       
+        <a tabindex="0" class="animation-a-cl" href="#">Discover more</a>
       </section>
 
-      <!-- world of maseratie img carrousel, height 642px-->
-      <section></section>
+      <!-- full page caro -->
+      <section>
+        <h2 tabindex="0">The world of <br>Maserati</h2>
+        <ul id="news-slider" tabIndex="-1">
+          <li id="news1">
+            <h3 tabindex="0">
+              Maserati unveils MC20 Notte, a fierce creature of the nocturnal
+              world
+            </h3>
+            <p>News</p>
+            <p>1/6</p>
+            
+            <a tabindex="0" class="animation-a-cl" href="#">Discover More ></a>
+          </li>
 
-      <!-- maseratie merch store, height 978px -->
-      <section></section>
+          <li id="news2">
+            <h3 tabindex="0">Quattroporte Turns 60</h3>
+            <p>News</p>
+            <p>2/6</p>
+            <a tabindex="0" class="animation-a-cl" href="#">Discover More ></a>
+          </li>
+
+          <li id="news3">
+            <h3 tabindex="0" >New Maserati Tipo Folgore unveiled for Formula E Season 10</h3>
+            <p>News</p>
+            <p>3/6</p>
+            <a tabindex="0" class="animation-a-cl" href="#">Discover More ></a>
+          </li>
+
+          <li id="news4">
+            <h3 tabindex="0">
+              Maserati GT2 debuts on the track at Circuit Paul Ricard and
+              already gets the podium with LP Racing in final round of the 2023
+              Fanatec GT2 European Series
+            </h3>
+            <p>News</p>
+            <p>4/6</p>
+            <a tabindex="0" class="animation-a-cl" href="#">Discover More ></a>
+          </li>
+
+          <li id="news5">
+            <h3 tabindex="0"> 
+              Maserati MSG Racing reveals Season 10 Formula E driver lineup
+            </h3>
+            <p>News</p>
+            <p>5/6</p>
+            <a tabindex="0" class="animation-a-cl" href="#">Discover More ></a>
+          </li>
+
+          <li id="news6">
+            <h3 tabindex="0">70th Anniversary of Fangio's Italian Grand Prix Victory</h3>
+            <p>News</p>
+            <p>6/6</p>
+            <a tabindex="0" class="animation-a-cl" href="#">Discover More ></a>
+          </li>
+        </ul>
+
+        <nav>
+          <ul>
+            <li><a href="#news1">I</a></li>
+            <li><a href="#news2">II</a></li>
+            <li><a href="#news3">III</a></li>
+            <li><a href="#news4">IV</a></li>
+            <li><a href="#news5">V</a></li>
+            <li><a href="#news6">VI</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- merch ad -->
+      <section>
+        <h2 tabindex="0">Discover every Collections on the Maserati store</h2>
+        <a tabindex="0" class="animation-a-bw" href="#">Discover More ></a>
+      </section>
+
+      <!-- Get in touch page -->
+      <section>
+        <h2 class="hide-from-user">Quick links</h2>
+        <ul>
+          <li>
+          <!-- link -->
+            <a href="#">Get in touch</a>
+            <!-- arrow -->
+            <img src="images/icons/icon_action_arrow_right.svg" alt="arrow icon">
+          </li>
+
+          <li>
+            <!-- link -->
+            <a href="#">Enter your zip code</a>
+            <!-- arrow -->
+            <img src="images/icons/icon_action_arrow_right_white.svg" alt="arrow icon">
+            <!-- icon -->
+            <img src="images/icons/redesign_menu_footer_zipcode_white.svg" alt="icon for location services" />
+          </li>
+
+          <li>
+            <!-- link -->
+            <a href="#">Build your own</a>
+            <!-- arrow -->
+            <img src="images/icons/icon_action_arrow_right_white.svg" alt="arrow icon">
+            <!-- icon -->
+            <img src="images/icons/customizer-icon.png" alt="icon for customization" />
+          </li>
+
+          <li>
+            <!-- divider -->
+            <span class="divider"></span>
+          </li>
+
+          <li>
+            <!-- link -->
+            <a href="#">Test Drive</a>
+            <!-- arrow -->
+            <img src="images/icons/icon_action_arrow_right_white.svg" alt="arrow icon">
+            <!-- icon -->
+            <img src="images/icons/icon_action_test_drive_white.svg" alt="icon for testdrive" />
+          </li>
+
+          <li>
+            <!-- divider -->
+            <span class="divider"></span>
+          </li>
+
+          <li>
+            <!-- link -->
+            <a href="#">Build your own</a>
+            <!-- arrow -->
+            <img src="images/icons/icon_action_arrow_right_white.svg" alt="arrow icon">
+            <!-- icon -->
+            <img src="images/icons/trident_mobile_white.svg" alt="" />
+          </li>
+
+          <li>
+            <!-- divider -->
+            <span class="divider"></span>
+          </li>
+
+          <li>
+            <a href="#">Dealer Locator</a>
+            <!-- arrow -->
+            <img src="images/icons/icon_action_arrow_right_white.svg" alt="arrow icon">
+            <!-- icon -->
+            <img src="images/icons/location-icon.png" alt="icon for location" />
+          </li>
+        </ul>
+      </section>
+
+      <!-- loading state -->
+
+      <section class="loader-wrapper">
+        <img src="images/icons/favicon_redesign.ico" alt="maserati logo">
+
+        <img class="loader" src="images/icons/maserati-loader.png" alt="loading animation of 2 maserati cars">
+      </section>
+      
     </main>
 
-    <footer></footer>
+    <!--full footer -->
+    <footer>
+      <h2 class="hide-from-user">Footer</h2>
+      <!-- logo -->
+      <img src="images/icons/redesign_menu_desktop_logo_white.svg" alt="header image of maserati" />
+      <!-- divider -->
+      <span class="divider"></span>
+      <!-- dropdowns -->
+      <ul>
+        <!-- Models -->
+        <li>
+          <input class="hide-icon" type="checkbox" id="modelDrop">
+          <label for="modelDrop">
+            <span>Models</span>
+            <span id="models-arrow" class="arrow"></span>
+          </label>
+          <ul id="modelsDropdown" class="dropdown-content">
+            <li>
+              <a href="#">Grecale</a>
+            </li>
+
+            <li>
+              <a href="#">Ghibli</a>
+            </li>
+
+            <li>
+              <a href="#">Levante</a>
+            </li>
+
+            <li>
+              <a href="#">Quattroporte</a>
+            </li>
+
+            <li>
+              <a href="gran-turismo.html">Gran Turismo</a>
+            </li>
+
+            <li>
+              <a href="#">MC20</a>
+            </li>
+
+            <li>
+              <a href="#">MC20 Cielo</a>
+            </li>
+          </ul>
+        </li>
+        <!-- Brand -->
+        <li>
+          <input class="hide-icon" type="checkbox" id="brandDrop">
+          <label for="brandDrop">
+            <span>Brand</span>
+            <span id="brand-arrow" class="arrow"></span>
+          </label>
+          <ul id="brandDropdown">
+            <li>
+              <a href="#">History</a>
+            </li>
+
+            <li>
+              <a href="#">Stories Of Audacity</a>
+            </li>
+
+            <li>
+              <a href="#">Maserati Tridente</a>
+            </li>
+
+            <li>
+              <a href="#">Fuoriserie</a>
+            </li>
+
+            <li>
+              <a href="#">Legacy</a>
+            </li>
+
+            <li>
+              <a href="#">Experiences</a>
+            </li>
+
+            <li>
+              <a href="#">Store</a>
+            </li>
+
+            <li>
+              <a href="#">Partners</a>
+            </li>
+          </ul>
+        </li>
+        <!-- Ownership -->
+        <li>
+          <input class="hide-icon" type="checkbox" id="ownerDrop">
+          <label for="ownerDrop">
+            <span>Ownership</span>
+            <span id="owner-arrow" class="arrow"></span>
+          </label>
+          <ul id="ownerDropdown" class="dropdown-content">
+            <li>
+              <a href="#">Maserati Heritage</a>
+            </li>
+
+            <li>
+              <a href="#">Financial Services</a>
+            </li>
+
+            <li>
+              <a href="#">Certified Pre-Owned</a>
+            </li>
+
+            <li>
+              <a href="#">Service And Assistance</a>
+            </li>
+
+            <li>
+              <a href="#">Customization</a>
+            </li>
+
+            <li>
+              <a href="#">Maserati Club</a>
+            </li>
+          </ul>
+        </li>
+        <!-- Corse -->
+        <li>
+          <input class="hide-icon" type="checkbox" id="corseDrop">
+          <label for="corseDrop">
+            <span>Corse</span>
+            <span id="corse-arrow" class="arrow"></span>
+          </label>
+          <ul id="corseDropdown" class="dropdown-content">
+            <li>
+              <a href="#">Race Beyond</a>
+            </li>
+
+            <li>
+              <a href="#">Formula E</a>
+            </li>
+
+            <li>
+              <a href="#">GT2</a>
+            </li>
+
+            <li>
+              <a href="#">MCXtrema</a>
+            </li>
+
+            <li>
+              <a href="#">Maserati Driving Experience</a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+      <!-- divider -->
+      <span class="divider"></span>
+      <!-- first list of services -->
+      <ul>
+        <li><h4>Services And Aftersales</h4></li>
+        <li><h4>Catalogues</h4></li>
+        <li><h4>Dealer Locator</h4></li>
+        <li><h4>Build & Price</h4></li>
+        <li><h4>Press Releases (Media)</h4></li>
+        <li><h4>Contact Us</h4></li>
+        <li><h4>Newsletter</h4></li>
+        <li><h4>Bluetooth Compatibility</h4></li>
+      </ul>
+
+      <!-- divider -->
+      <span class="divider"></span>
+
+      <ul>
+        <li><h4>Legal Notes</h4></li>
+        <li><h4>Cookies Settings</h4></li>
+      </ul>
+      
+      <!-- divider -->
+      <span class="divider"></span>
+
+      <h3>Stay up to date</h3>
+      <a class="animation-a-bw" href="#">Subscribe to our newsletter</a>
+
+      <h3 id="follow-heading">Follow us on social</h3>
+      <!-- icons of socials -->
+      <ul>
+        <!-- facebook -->
+        <li><img src="images/icons/facebook-icon.png" alt="icon of facebook"></li>
+        <!-- Twitter/X -->
+        <li><img src="images/icons/twitter-icon.png" alt="icon of twitter"></li>
+        <!-- Youtube -->
+        <li><img src="images/icons/yt-icon.png" alt="icon of Youtube"></li>
+        <!-- Instagram -->
+        <li><img src="images/icons/insta-icon.png" alt="icon of Instagram"></li>
+        <!-- LinkedIn -->
+        <li><img src="images/icons/linkedin-icon.png" alt="icon of LinkedIn"></li>
+        <!-- TikTok -->
+        <li><img src="images/icons/tiktok-icon.png" alt="icon of TikTok"></li>
+      </ul>
+
+      <span class="divider"></span>
+
+
+    </footer>
+
+
+    <!-- dropdowns van: https://blog.logrocket.com/making-dropdown-menus-css/ -->
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/model-selector.js"></script>
+    <script defer src="scripts/auto-slider.js"></script>
+    <!-- <script defer src="scripts/video-player.js"></script> -->
+
+    
   </body>
 </html>

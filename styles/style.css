@@ -21,11 +21,14 @@
   --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
+  --warm: #b18c4b;
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #007bff;
   --secondary: #6c757d;
+
+  --light-link: #fdfdfd;
 
   --button-primary: #ffc844;
   --button-secondary: #1c3775;
@@ -35,18 +38,6 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
-
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
 
   --nav-color: #868686;
 
@@ -58,23 +49,77 @@
   --video-text-card-align: 2rem;
   --video-slider-info-align: 4rem;
 }
+/* ///////// */
+/* //HTML/// */
+/* ///////// */
 
-/* ------------ HTML ----------- */
-html:has([type="checkbox"]:checked) header nav ul li:nth-of-type(1) {
+html:has([id="hamburger"][type="checkbox"]:checked) header nav section {
   opacity: 1;
   display: block;
 }
 
-html:has([type="checkbox"]:checked) {
+html:has([id="hamburger"][type="checkbox"]:checked)
+  header
+  nav
+  > ul
+  li:nth-of-type(3) {
+  opacity: 1;
+}
+
+html:has([id="hamburger"][type="checkbox"]:checked)
+  header
+  nav
+  > ul
+  li:nth-of-type(4) {
+  opacity: 1;
+}
+
+html:has([id="hamburger"][type="checkbox"]:checked) {
   overflow: hidden;
 }
 
-/* ----------------------------- */
+html:has([id="modelDrop"][type="checkbox"]:checked) #modelsDropdown {
+  display: block;
+}
+html:has([id="modelDrop"][type="checkbox"]:checked) #models-arrow {
+  transform: rotate(180deg);
+}
 
-/* ------------ BODY ----------- */
+html:has([id="brandDrop"][type="checkbox"]:checked) #brandDropdown {
+  display: block;
+}
+html:has([id="brandDrop"][type="checkbox"]:checked) #brand-arrow {
+  transform: rotate(180deg);
+}
+
+html:has([id="ownerDrop"][type="checkbox"]:checked) #ownerDropdown {
+  display: block;
+}
+html:has([id="ownerDrop"][type="checkbox"]:checked) #owner-arrow {
+  transform: rotate(180deg);
+}
+
+html:has([id="corseDrop"][type="checkbox"]:checked) #corseDropdown {
+  display: block;
+}
+html:has([id="corseDrop"][type="checkbox"]:checked) #corse-arrow {
+  transform: rotate(180deg);
+}
+
+html:has(.loader-wrapper){
+  overflow: hidden;
+}
+
+
+/* ///////// */
+/* //BODY/// */
+/* ///////// */
+
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  margin-top: -1.2em;
 
   background-color: var(--white);
 
@@ -83,12 +128,14 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
-/* ----------------------------- */
 
-/* ------------ MAIN ----------- */
+/* ///////// */
+/* //MAIN/// */
+/* ///////// */
+
 main section,
 main ul,
 main li,
@@ -97,9 +144,12 @@ header {
   padding: 0;
 }
 
-/* ----------------------------- */
-
-/* --------- NAVIGATION -------- */
+main a:focus{
+  border-color: var(--yellow);
+}
+/* ///////// */
+/* ///NAV/// */
+/* ///////// */
 header {
   position: relative;
 }
@@ -107,54 +157,82 @@ header {
 header nav {
   position: fixed;
   z-index: 50;
-
   width: 100vw;
-
-  background-color: var(--nav-color), transparent;
 }
 
 header nav > ul {
   position: relative;
+  top: -15px;
+  height: 60px;
 
   display: flex;
   flex-direction: row;
   align-items: center;
 
   list-style: none;
+
+  backdrop-filter: blur(10px);
 }
 
-header nav > ul li:nth-of-type(2) {
+
+/* maserati icon */
+header nav > ul li:nth-of-type(1) {
   position: absolute;
   left: 1.5em;
   top: 1.5em;
 }
-
-header nav > ul li:nth-of-type(3) {
+/* hamburger */
+header nav > ul li:nth-of-type(2) {
   position: absolute;
   right: 1.5em;
   top: 1.5em;
 }
 
-/* invis nav section */
-header nav ul li:nth-of-type(1) {
-  position: fixed;
+/* location */
+header nav > ul li:nth-of-type(3) {
+  position: absolute;
+  right: 6.5em;
+  top: 0.7em;
+  opacity: 0;
+}
+
+/* customizer */
+header nav > ul li:nth-of-type(4) {
+  position: absolute;
+  right: 3.5em;
+  top: 1em;
+  opacity: 0;
+}
+
+/* invis nav */
+header nav section {
+  position: absolute;
+  height: 100vh;
 
   display: none;
   inset: 0;
 
-  opacity: 0;
+  list-style: none;
+  opacity: 1;
   background-color: black;
 }
 
-header nav ul li:nth-of-type(1) ul {
-  position: absolute;
+header nav section ul {
+  position: relative;
   top: 4em;
 
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
 
   font-family: Everett, sans-serif;
-  font-size: 1em;
-  font-weight: 800;
+  font-size: 2em;
+  font-weight: 300;
+
+
 }
 
 /* ----------------------------- */
@@ -166,52 +244,133 @@ footer {
   color: white;
 }
 
-footer ul li ul {
-  position: absolute;
-  z-index: 1;
-
-  display: none;
-  min-width: 160px;
-
+footer ul {
   list-style: none;
-  background-color: var(--light);
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  margin-left: 1em;
+  padding: 0;
 }
 
-footer button,
-footer input {
-  padding: 16px;
-
-  background-color: var(--primary);
-  border: none;
-
-  cursor: pointer;
-
-  color: var(--white);
-  font-size: 16px;
+footer img:first-of-type {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-footer ul > li {
+.divider {
+  width: 94%;
+  height: 1px;
+
+  margin-left: 1em;
+  margin-right: 1em;
+  display: block;
+
+  border-top: 0.1em solid var(--white);
+}
+
+
+.divider-black {
+  width: 94%;
+  height: 1px;
+
+  display: block;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+
+  border-top: 0.1em solid black;
+}
+.arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+
+  transition: transform ease-in-out 0.3s;
+}
+
+/* ///////// */
+/* /FOOTER// */
+/* ///////// */
+
+footer ul:first-of-type {
   position: relative;
 
-  display: inline-block;
+  list-style: none;
 }
 
-footer ul li ul li {
-  display: block;
-  padding: 12px 16px;
+footer ul:first-of-type label {
+  width: 90%;
 
-  color: black;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 0.5em;
+}
+
+#modelsDropdown,
+#brandDropdown,
+#ownerDropdown,
+#corseDropdown {
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+  display: none;
+}
+
+#modelsDropdown li,
+#brandDropdown li,
+#ownerDropdown li,
+#corseDropdown li {
+  margin-top: 1.2em;
+}
+
+#modelsDropdown a,
+#brandDropdown a,
+#ownerDropdown a,
+#corseDropdown a {
   text-decoration: none;
+  font-family: Everett, sans-serif;
+  font-size: 1.2em;
+  font-weight: 100;
+  color: var(--white);
 }
 
-footer ul li ul li a:hover {
-  background-color: var(--light);
+/* first normal list */
+footer ul:nth-of-type(2) {
+  font-family: Everett, sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  color: var(--light-link);
 }
 
-/* ----------------------------- */
+footer ul:nth-of-type(2) li {
+  margin-top: 2em;
+}
 
-/* --------- HAMBURGER -------- */
+/* social list */
+footer ul:nth-of-type(4),
+footer h3,
+footer a {
+  margin-left: 1em;
+
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul:nth-of-type(4) li {
+  margin: auto 0;
+  margin-right: 1em;
+}
+
+#granturismo-link:visited{
+  color: var(--yellow);
+}
+
+/* /////////// */
+/* /HAMBURGER/ */
+/* /////////// */
+
 nav ul li label div {
   position: relative;
 
@@ -222,20 +381,21 @@ nav ul li label div {
 
 nav ul li span {
   position: absolute;
+  width: 1rem;
+  height: 0.13rem;
 
   display: block;
   padding: 0;
-  width: 1rem;
-  height: 0.13rem;
 
   background-color: white;
   border-radius: 0.13rem;
 
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul li span:nth-of-type(1) {
   top: 0;
+
   transform-origin: 5%;
 }
 
@@ -255,11 +415,12 @@ nav ul li span:nth-of-type(4) {
 
 nav ul li input {
   position: absolute;
+  height: 1px;
+  width: 1px;
 
   overflow: hidden;
   clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
+
   margin: -1px;
   padding: 0;
 
@@ -267,64 +428,79 @@ nav ul li input {
 }
 
 nav ul li input:checked + label > div > span:nth-of-type(1) {
-  transform: rotate(45deg);
-
   height: 0.1rem;
   width: 1.4rem;
+
+  transform: rotate(45deg);
 }
 
 nav ul li input:checked + label > div > span:nth-of-type(2) {
-  transform: rotate(-45deg);
-
   height: 0.1rem;
+  
+  transform: rotate(-45deg);
 
   background-color: transparent;
 }
 
 nav ul li input:checked + label > div > span:nth-of-type(3) {
-  transform: rotate(45deg);
-
   height: 0.1rem;
+  
+  transform: rotate(45deg);
 
   background-color: transparent;
 }
 
 nav ul li input:checked + label > div > span:nth-of-type(4) {
-  transform: rotate(-45deg);
-
   height: 0.1rem;
   width: 1.4rem;
+ 
+  transform: rotate(-45deg);
 }
 
-/* ----------------------------- */
 
-/* ----------CLASSES------------ */
+/* ///////// */
+/* /CLASSES/ */
+/* ///////// */
+
+.hide-icon {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  border: 0;
+}
 
 .hide-from-user {
-  overflow: hidden;
   position: absolute;
-
   height: 1px;
   width: 1px;
 
+  overflow: hidden;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
+
   white-space: nowrap;
   /* information above found at: https://www.a11yproject.com/posts/how-to-hide-content/ */
 }
 
 /* a style */
 .animation-a-cl {
-  padding: 18px 36px 18px 21px;
   min-width: 420px;
   min-height: 50px;
+
+  padding: 18px 36px 18px 21px;
 
   background-color: var(--button-primary);
   background: transparent;
   background: linear-gradient(
       100deg,
-      var(--button-primary) 50%,
-      var(--button-secondary) 50%
+      var(--button-secondary) 50%,
+      var(--button-primary) 50%
     )
     right;
   background-size: 240% 100%;
@@ -334,19 +510,19 @@ nav ul li input:checked + label > div > span:nth-of-type(4) {
   font-size: 0.8em;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--white);
+  color: black;
   text-align: center;
 
   transition: all 800ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .animation-a-bw {
-  padding: 18px 36px 18px 21px;
   min-width: 420px;
   min-height: 50px;
 
-  background-color: transparent;
-  background: linear-gradient(100deg, transparent, var(--white) 100%) right;
+  padding: 18px 36px 18px 21px;
+
+  background: linear-gradient(to right, rgba(255,255,255, 0) 0%, rgba(255,255,255, 0) 0%) right;
   background-size: 200%;
   border: solid var(--white) 0.25em;
 
@@ -361,7 +537,126 @@ nav ul li input:checked + label > div > span:nth-of-type(4) {
   transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.animation-a-cl:hover,
-.animation-a-bw:hover {
+.animation-a-cl:hover
+ {
   background-position: left;
+
+  color: white;
+}
+.animation-a-bw:hover{
+  background: linear-gradient(100deg, rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 0%) right;
+  color: black;
+
+  transition: all 500ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loader-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--button-secondary);
+}
+
+.loader-wrapper img:nth-of-type(2) {
+  position: fixed;
+  z-index: 60000;
+
+  margin: auto;
+}
+
+.loader {
+  width: 30%;
+
+  display: inline-block;
+
+  animation: loader linear 2s infinite;
+}
+
+
+.loader-fadeOut {
+  animation: loader-fadeOut 2s infinite ease;
+}
+
+
+/* /////////// */
+/* /KEYFRAMES/ */
+/* /////////// */
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-36deg);
+  }
+  20% {
+    transform: rotate(-72deg);
+  }
+  30% {
+    transform: rotate(-108deg);
+  }
+  40% {
+    transform: rotate(-144deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  60% {
+    transform: rotate(-216deg);
+  }
+  70% {
+    transform: rotate(-252deg);
+  }
+  80% {
+    transform: rotate(-288deg);
+  }
+  90% {
+    transform: rotate(-324deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+@keyframes loader-fadeOut {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }

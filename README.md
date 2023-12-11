@@ -210,34 +210,85 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- De vraag over de slideshow voor daan, is deels niet beantwoord. Gelukkig hebben we hem wel in de juiste richting kunnen
+  sturen, met behulp van verschillende web pagina's.
+- De vraag over animaties van Safa is wel beantwoord, en hierdoor kan zij weer verder met de CMD site.
+
 
 </details>
 
 ## Eindgesprek (week 5)
 
-<details>
-  <summary>uitwerken voor eindgesprek</summary>
 
-### Je uitkomst - karakteristiek screenshots:
+<h2>De surface planes van mijn website</h2>
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+<h5>Mijn top-punten maar ook mijn diepte-punten</h5>
 
-### Dit ging goed/Heb ik geleerd:
+<h3>Loading</h3>
+  <img src="images/verslag/SurfacePlane-Loader.png" width="375px" alt="screenshot van de page loading animatie">
+  <img src="images/verslag/loader-html.png" width="375px" alt="html code van de page loading animatie">
+  <img src="images/verslag/loader-js.png" width="375px" alt="Javascript code van de page loading animatie">
+  <p>De page loader is gemaakt om het makkelijk te maken dat alle afbeeldingen zijn ingeladen voor dat de gebruiker
+  de pagina kan bezoeken. Ik heb ervoor gekozen om het logo van Maserati centraal neer te zetten. Daarom heen draaien 2
+  Maserati auto's dit is een png die ik doormiddel van keyframes roteer.</p>
 
-Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+<h3>DOM Manipulatie</h3>
+<img src="images/verslag/DOM-manipulatie-1-html.png" width="375px" alt="screenshot van de dom manipulatie voor de GranTurismo Modena">
+<img src="images/verslag/DOM-manipulatie-2-html.png" width="375px" alt="screenshot van de dom manipulatie voor de GranTurismo Folgore">
+<img src="images/verslag/DOM-manipulatie-arrays-js.png" width="375px" alt="Javascript code voor de data in de arrays">
+<img src="images/verslag/DOM-manipulatie-create-js.png" width="375px" alt="Javascript code voor het aanmaken van de observers">
+<img src="images/verslag/DOM-manipulatie-elements-js.png" width="375px" alt="Javascript code voor het aanmaken van variabelen waar de html elementen aan gekoppeld worden">
+<img src="images/verslag/DOM-manipulatie-observer-js.png" width="375px" alt="Javascript code voor het uitvoeren van code bij observatie">
+<p>Ik manipuleer de DOM door dat ik een lijstje heb die ik doormiddel van flexbox op zijn kant heb gezet en hier een carroussel van heb weten te maken. Onder de lijst staan een aantal specificaties die voor de verschillende auto's net weer iets anders zijn.Daarom heb ik een een script gemaakt waar ik de waardes kan aanpassen. Dit doe ik doormiddel van een intersect observer.</p>
 
-### Dit was lastig/Is niet gelukt:
+<h3>Custom Properties</h3>
+<img src="images/verslag/Custom-alignment-css.png" width="375px" alt="custom propertie voor het uitlijnen van elementen">
+<img src="images/verslag/Custom-prop-animation-css.png" width="375px" alt="custom propertie voor het definieren vanaf waar de scroll animatie moet beginnen">
 
-Korte omschrijving met plaatjes
+  <p>Ik maak natuurlijk gebruik van <em>Custom Properties</em> bij de kleuren zoals gebruikelijk is, maar op sommige plekken maak ik ook gebruik van de properties door de uitlijning vast te zetten. Ik heb ook een custom property gemaakt voor de scroll animatie om daar te kunnen aangeven om welke container het gaat waar naar gekeken moet worden.</p>
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
+<h3>Advanced Positioning</h3>
+<img src="images/verslag/Position-fixed-relative-css.png" width="375px" alt="css code voor position fixed en position relative">
+<img src="images/verslag/Position-absolute-css.png" width="375px" alt="css code voor position absolute">
+<img src="images/verslag/Position-sticky-css.png" width="375px" alt="css code voor position sticky">
+
+  <p>Voor advanced Positioning maak ik gebruik van zo goed als alle methodes. Van absolute tot relative, van sticky tot fixed.
+  </p>
+
+<h3>Scroll animaties</h3>
+<img src="images/verslag/Scroll-small-html.png" width="375px" alt="screenshot van de pagina waar het element klein te zien is">
+<img src="images/verslag/Scroll-large-html.png" width="375px" alt="screenshot van de pagina waar het element groter te zien is">
+<img src="images/verslag/Scroll-animation-css.png" width="375px" alt="css code voor het aanroepen van de scroll animatie">
+<img src="iimages/verslag/Scroll-keyframe-css.png" width="375px" alt="css code voor het aanmaken van de keyframels voor de scroll animatie">
+
+  <p>De scroll animatie is iets wat op mijn pagina wel een must is, hoe de developers van Maserati het hebben gedaan heb ik geen idee voor. Gellukkig zijn de scroll-driven-animations nieuw in CSS, jammer genoeg weet mijn docent hier net zoveel als ik van aan het begin van het project. Ik heb het gelukkig aan de praat gekregen en hier is te zijn hoe dat is gelukt.</p>
+
+<h3>BlingBling</h3>
+<img src="images/verslag/Bling-1-html.png" width="375px" alt="screenshot van de pagina met de blauwe auto">
+<img src="images/verslag/Bling-2-html.png" width="375px" alt="screenshot van de pagina met de gele auto">
+<img src="images/verslag/Bling-3-html.png" width="375px" alt="screenshot van de pagina met de grijze auto">
+<img src="images/verslag/Bling-change-function-js.png" width="375px" alt="Javascript code met functie voor het veranderen">
+<img src="images/verslag/Bling-dictionaries-js.png" width="375px" alt="Javascript code met dictionaries met daarin de data per auto kleur">
+<img src="images/verslag/Bling-elements-js.png" width="375px" alt="Javascript code die de html elementen aan de js koppeld">
+<img src="images/verslag/Bling-evenlistner-js.png" width="375px" alt="Javascript code die de knoppen interactief maakt">
+
+  <p>Voor de Bling Bling Factor heb ik op mijn site de AUTOKLEUR-inator in werking gesteld. Hierdoor is het als gebruiker heel makkelijk te zien hoe de GranTurismo er in verschillende kleuren uitziet. Voor mij was dit een grote hersen stoe partij, waar ik uiteindelijk van gewonnen heb. Toen ik er mee klaar was dacht ik wel even, heb ik toch mooi gedaan.
+  </p>
+
+<h3>Hamburger zonder JS</h3>
+<img src="images/verslag/hamburger-closed.png" width="375px" alt="screenshot van de hamburger gesloten">
+<img src="images/verslag/hamburger-open.png" width="375px" alt="screenshot van de hamburger geopend">
+<img src="images/verslag/hamburger-html-new.png" width="375px" alt="html code van de hamburger">
+<img src="images/verslag/hamburger-span-rotater.png" width="375px" alt="css code van de spans die geroteerd worden">
+<img src="images/verslag/hamburger-section-enable.png" width="375px" alt="css code voor het aan en uit zetten van de section">
+
+  <p>De hamburger icon, we kennen hem allemaal. Als we hem in een site willen plaatsen, krijgen we al snel de opmerking. "ja maar dan moet ik met Javascript gaan knoeien". Nou dat hoeft dus niet. Ik heb mijn hamburger aan de praat gekregen door hem te animeren met css, en aan/uit te zetten doormiddel van de ":has()" functie die ook nieuw in css te vinden is.
+  </p>
+
+<h5 style="text-align:center">Op de vraag heb ik een lastige site gekozen? Ja dat heb ik</h5>
+<h5 style="text-align:center">Maar het is toch ook niet leuk zonder uitdaging</h5>
+
 
 ## Bronnenlijst
 
