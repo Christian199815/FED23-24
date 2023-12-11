@@ -179,6 +179,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+- Het is nu een stuk makkelijker om door de site van Maserati heen te tabben. voorheen was dit niet zo makkelijk.
+- De knoppen onder de lijstjes/sliders geven nu aan waar ze heen gaan wat het makkelijker maakt om te weten wat je aan drukt.
+
 </details>
 
 ## Voortgang 3 (week 4)
