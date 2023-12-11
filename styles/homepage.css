@@ -90,9 +90,10 @@ main section:first-of-type li:nth-of-type(2) {
 }
 
 main section:first-of-type li:nth-of-type(3) {
-  background-image: url("../images/Home/page-covers/store_vertical.jpg");
+  background-image: url("../images/Home/header-carrousel/Home_mobile_PB.jpg");
   background-position: center;
   background-size: cover;
+  font-size: 1em;
 }
 
 main section:first-of-type li:nth-of-type(4) {
@@ -124,6 +125,8 @@ main section:first-of-type img {
 main section:first-of-type > ul::-webkit-scrollbar {
   display: none;
 }
+
+
 
 /* ---------------------------- */
 
