@@ -1,9 +1,6 @@
 // JavaScript Document
 console.log("hi Merle");
 
-
-
-
 window.addEventListener(
     "load",
     (event) => {
@@ -17,7 +14,3 @@ window.addEventListener(
     },
     false,
 );
-
-
-
-
